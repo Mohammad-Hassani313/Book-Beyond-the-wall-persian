@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap5 cdn and some css stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>کتاب - آن سوی دیوار</title>
+    <link rel="shortcut icon" href="./assets/imgs/smallBook.jpg" type="image/x-icon">
+    
+    <noscript>
+        <div id="noscript">
+            <h1 class="display-5">Webpage can't be accessed, Please enable Javascript in your browser.</h1>
+        </div>
+    </noscript>
+
+    <style>
+        .accordion-button::after{
+            position: absolute;
+            left: 2vw;
+        }
+        .form-floating > label{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+                        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#home" class="navbar-brand">
+                <img src="./assets/imgs/bigBook.png" alt="LOGO" style="width: 20px;">
+                کتاب - آن سوی دیوار</a>
+            <button class="navbar-toggler" data-bs-toggle='collapse' data-bs-target='#navbar_top'>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar_top">
+                <div class="navbar-nav me-auto">
+                <a href="#home" class="nav-link active">خانه</a>
+                <a href="#pricing" class="nav-link d-block d-lg-none">خریدن کتاب</a>
+                <a href="#insideBook" class="nav-link">درون کتاب</a>
+                <a href="#reviews" class="nav-link">نظریات کاربران</a>
+                <a href="#contact_us" class="nav-link">تماس با ما</a>
+                <a href="#pricing" class="btn btn-outline-light d-none d-lg-block">میخرم</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <article>
+        <marquee style='background-color: #ddd; color: rgba(0, 0, 0, 0.856);' direction="right">اینجا صرف برای تبلیغات وبسایت می باشد.</marquee>
+                        <!-- خانه -->
+        <section id="home">
+            <div class="container mt-5">
+                <div class="row text-center text-lg-end align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="display-3" style="font-family: mosalas;" id="title_page">آن سوی دیوار</h2>
+                        <h6 class="h3 fw-bold text-muted mt-3">اقتصاد چین : آنچه هرکس باید بداند</h6>
+                        <h6 class="h5 text-muted mb-3">توسط آرتور آر. کرویر</h6>
+                        <a href="./assets/imgs/smallBook.jpg" target="_blank" class="d-block d-lg-none text-decoration-none text-muted my-2 small">مشاهده عکس کتاب</a>
+                        <a href='#pricing' class="btn btn-secondary btn-lg fs-5">خرید</a>
+                        <a href="#otherBooksOffcanvas" data-bs-toggle='offcanvas' class="text-decoration-none d-block mt-3 text-dark">بررسی کتاب های هم موضوع...</a>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block text-center">
+                        <img src="./assets/imgs/bigBook.png" alt="the book image" class="img-fluid" style="width: 280px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+                        <!-- پلان های قیمت -->
+        <section id="pricing" class="mt-5 bg-light pb-3">
+            <div class="text-center">
+                <h2 class="display-6 fw-bold" style="letter-spacing: -1px;">پکیج های خرید</h2>
+                <p class="text-muted">بهترین قیمت و بهترین پکیج تان را انتخاب کنید</p>
+            </div>
+            <div class="container mt-4">
+                <div class="row gy-4">
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold">پکیج نخست</h3>
+                                <p>فقط دانلود کتاب</p>
+                                <p class="text-success fs-2 fw-bold my-4">49 افغانی</p>
+                                <p>رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است.</p>
+                                <button class="btn btn-lg btn-outline-success my-3">خریدن</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-1 border-success">
+                            <div class="card-header text-center">
+                                <div class="card-title text-primary">مشهورترین پکیج بین کاربران</div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold fs-1">پکیج کامل</h3>
+                                <p>دانلود کتاب و تمام آپدیت های آن</p>
+                                <p class="text-success fs-1 fw-bold my-4">99 افغانی</p>
+                                <p>رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم استسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است.</p>
+                                <button class="btn btn-lg btn-outline-success fw-bold my-3">خریدن</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <div class="card-body">
+                                <h3 class="fw-bold">پکیج نهایی</h3>
+                                <p>دانلود کتاب، آپدیت ها و وسایل جانبی آن</p>
+                                <p class="text-success fs-2 fw-bold my-4">129 افغانی</p>
+                                <p>سانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است.سانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است.</p>
+                                <button class="btn btn-lg btn-outline-success my-3">خریدن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                        <!-- درون کتاب -->
+        <section id="insideBook" class="mt-5 pb-4">
+            <div class="text-center">
+                <h2 class="display-6 fw-bold" style="letter-spacing: -1px;">درون کتاب...</h2>
+                <p class="text-muted">نگاه اجمالی به موضوعاتی که مطالعه خواهید کرد</p>
+            </div>
+            <div class="container mt-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6 d-none d-lg-block text-center">
+                        <img src="./assets/imgs/smallBook.jpg" alt="The Book Image" class="img-fluid shadow rounded-top rounded-pill" style="width: 240px;border: 1px solid gray; filter:contrast(100%);">
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
+                        <div class="accordion">
+                            <div class="accordion-items">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button" style="text-align: right;" data-bs-toggle="collapse" data-bs-target='#chapter_1'>
+                                            فصل اول - این فصل اول کتاب است
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse show" id="chapter_1">
+                                        <div class="accordion-body text-end">
+                                            <p>چین یک کشور عالی است.</p>
+                                            <p>رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button" data-bs-target='#chapter_2' data-bs-toggle='collapse'>
+                                            فصل دوم - این فصل دوم کتاب است
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="chapter_2">
+                                        <div class="accordion-body text-end">
+                                            <p>رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button" data-bs-target='#chapter_3' data-bs-toggle='collapse'>
+                                            فصل سوم - این فصل سوم کتاب است
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="chapter_3">
+                                        <div class="accordion-body text-end">
+                                            <p> رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button" data-bs-toggle='collapse' data-bs-target='#chapter_4'>
+                                            فصل چهارم - این فصل چهارم کتاب است
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="chapter_4">
+                                        <div class="accordion-body text-end">
+                                            <p>رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button d-none d-lg-flex" data-bs-toggle='collapse' data-bs-target='#chapter_5'>
+                                            فصل پنجم - این فصل پنجم کتاب است
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="chapter_5">
+                                        <div class="accordion-body text-end">
+                                            <p>رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                                <!-- نظریات کاربران -->
+        <section id="reviews" class="bg-light mt-5 py-3">
+            <div class="text-center">
+                <h2 class="display-6 fw-bold" style="letter-spacing: -1px;">نظرات کاربران محترم</h2>
+                <p class="text-muted">چکیده ی از سخنان کاربرانی که کتاب را مطالعه کرده اند</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="list-group">
+                            <div class="list-group-item list-group-item-action">
+                                <h4 class="pt-2">مورد نیاز هر علم پروری!</h4>
+                                <p style="text-align: justify;">رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                <small class='text-muted'>ـــ محمد حسنی</small>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <h4 class="pt-2">😃باید هرکسی مطالعه کند</h4>
+                                <p style="text-align: justify;"> رسانه ها قوه چهارم یک دولت به شمار می روند.رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                <small class='text-muted'>ـــ شاهرخ میرزایی</small>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <h4 class="pt-2">عالی هست</h4>
+                                <p style="text-align: justify;"> رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                <small class='text-muted'>ـــ علی عظیمی</small>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <h4 class="pt-2">کتاب عالی از مولف عالی</h4>
+                                <p style="text-align: justify;"> رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                                <small class='text-muted'>ـــ حسن نیکپا</small>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <h4 class="pt-2">کتاب عالی بود💖</h4>
+                                <p style="text-align: justify;">این کتاب معلومات موثق و معتبری در مورد اقتصاد کشور چین می دهد.</p>
+                                <small class='text-muted'>ـــ محمد علی حیدری</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                                <!-- تماس با ما -->
+        <section id="contact_us" class="mt-5">
+            <div class="text-center">
+                <h2 class="display-6 fw-bold" style="letter-spacing: -1px;">تماس با ما</h2>
+                <p class="text-muted">سوالی دارید؟ لطفاً فورم ذیل را پر کنید و منتظر جواب ما باشید</p>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <form action="#">
+                            <label for="fname" class="form-label fw-bold">اسم:</label>
+                            <input type="text" onblur="validateFName(event)" class="form-control" id="fname" placeholder="اسم کوچک تان را وارد کنید...">
+                            <div class="form-text" id="fnameText" class="text-danger"></div>
+                            
+                            <label for="lname" class="form-label fw-bold mt-2">تخلص:</label>
+                            <input type="text" class="form-control" id="lname" placeholder="تخلص یا اسم خانوادگی تان را وارد کنید...">
+                            <label for="email-e" class="form-label fw-bold mt-2">ایمیل:</label>
+                            <input type="email" id="email-e" class="form-control" placeholder="آدرس ایمیل تان را وارد کنید...">
+                            <label for="cityChoose" class="form-label mt-2 fw-bold">شهر تان را انتخاب کنید:</label>
+                            <select id="cityChoose" class="form-select">
+                                <option value="herat">هرات</option>
+                                <option value="kabul">کابل</option>
+                                <option value="ghor">غور</option>
+                                <option value="bamyan">بامیان</option>
+                                <option value="ghazni">غزنی</option>
+                                <option value="daikondi">دایکندی</option>
+                                <option value="mazar">مزار شریف</option>
+                                <option value="kandahar">قندهار</option>
+                                <option value="helmand">هلمند</option>
+                                <option value="takhar">تخار</option>
+                            </select>
+                            <label for="queryAbout" class="form-label fw-bold mt-2">محتوا سوال تان چیست؟</label>
+                            <select id="queryAbout" class="form-select">
+                                <option value="pricing">در مورد قیمت کتاب ها</option>
+                                <option value="content">در مورد محتوای کتاب ها</option>
+                                <option value="content">در مورد عملکرد وبسایت</option>
+                                <option value="other">دیگر...</option>
+                            </select>
+                            <div class="form-floating mt-3">
+                                <textarea id="feedback" class="form-control" style="resize: none;height: 140px;" placeholder="d"></textarea>
+                                <label for="feedback" class="form-label fw-bold">سوال تان را بنویسید:</label>
+                            </div>
+                            <div class="text-center">
+                                <!-- just to prevent from reloading the page: below >> type="submit" is true -->
+                                <input type="button" value="ارسال" class="btn  btn-lg btn-success mt-4">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+                            <!-- Footer / تخفیف -->
+        <section style='background-color:#ccc;margin-top: 80px;'>
+            <div class="text-center">
+                <h2 class="pt-4 fw-bold" style="letter-spacing: -1px;">دریافت تخفیف</h2>
+                <p class="text-muted">فقط با اشتراک به قرعه کشی هفته وار ما برای 3 ماه از ما تخفیف بگیرید</p>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-xl-6">
+                        <div class="text-center">
+                            <p>رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                            <input type="button" type="button" value="حالا اشتراک کنید" class="btn btn-outline-primary mt-3 mb-5" data-bs-target='#lottery' data-bs-toggle='modal'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+                                <!-- modal / اشتراک در قرعه کشی -->
+    <div class="modal fade" id="lottery" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">قرعه کشی هفته وار اقرا</h3>
+                    <button class="btn-close position-absolute" style="left: 10px;" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align:justify;">رسانه عبارت از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.رسانه عبارت از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+                    <label for="lotteryEmail" class="form-label fw-bold">ایمیل:</label>
+                    <input type="email" id="lotteryEmail" class="form-control" placeholder="آدرس ایمیل تان را وارد کنید..."> 
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm btn-success">اشتراک</button>
+                    <button class="btn btn-sm btn-secondary" data-bs-dismiss="modal">بستن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                                <!-- Offcanvas / کتاب های هم موضوع -->
+    <div class="offcanvas offcanvas-end" id="otherBooksOffcanvas" tabindex="-1">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title fw-bold" style="letter-spacing: 0px;">کتاب های هم موضوع ...</h3>
+            <a class="btn-close" style="cursor: pointer;" data-bs-dismiss='offcanvas'></a>
+        </div>
+        <div class="offcanvas-body" id='otherBookLinks'>
+            <p class="lh-lg">رسانه عبارت  از وسیله انتقال پیام، معلومات و اطلاعا ت به مردم است. مطبوعات و رسانه های جمعی چه چاپی و چه تصویری و صوتی، در جهت آگاهی افکار عامه نقش  بس مهمی را ایفا می نمایند؛ حتی به اعتقاد بعضی از دانشمندان، رسانه ها قوه چهارم یک دولت به شمار می روند.</p>
+            <a href="#" class="d-block" title="توسط جومک جو نیس ترجمه ی صدیقه محمدی">یک رییس جمهور به فروش می رسد</a>
+            <a href="#" class="d-block" title="آین رند ترجمه ی رضا زارع پور">کاپیتالیسم چیست؟</a>
+            <a href="#" class="d-block" title="شیبلی تلهامی ترجمه ی احسان اله نیک آیین">قمار آمریکا در خاورمیانه</a>
+            <a href="#" class="d-block" title="هارولد لمب ترجمه ی غلام حسین قراگوزلو">چنگیز خان</a>
+        </div>
+        <div class="offcanvas-footer">
+            <a class="btn btn-outline-dark float-start m-2" data-bs-dismiss="offcanvas">بستن</a>
+        </div>
+    </div>
+</body>
+</html>
