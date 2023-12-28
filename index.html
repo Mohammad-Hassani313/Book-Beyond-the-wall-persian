@@ -25,6 +25,9 @@
         .form-floating > label{
             right: 0;
         }
+        .form-floating > .form-control:focus ~ label , .form-floating > .form-control:not(:placeholder-shown) ~ label{
+            transform: scale(0.85) translateY(-0.5rem) translateX(4rem);
+        }
     </style>
 </head>
 <body>
